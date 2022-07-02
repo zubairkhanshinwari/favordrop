@@ -1,0 +1,200 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 0,
+    "pending": 0,
+    "failures": 5,
+    "start": "2022-02-10T06:09:14.386Z",
+    "end": "2022-02-10T06:09:51.800Z",
+    "duration": 37414,
+    "testsRegistered": 5,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "924773ba-f533-4a7a-a64c-d9085a045696",
+      "title": "",
+      "fullFile": "cypress/integration/testCases/testAddUser.js",
+      "file": "cypress/integration/testCases/testAddUser.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6448eb53-d1fd-43ee-8b31-e695e90502af",
+          "title": "Add new User",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login Admin",
+              "fullTitle": "Add new User Login Admin",
+              "timedOut": null,
+              "duration": 14675,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "login.visit();\nlogin.fillEmail(user.user9);\nlogin.fillPassword(user.pass9);\nlogin.clickSubmit();\ncy.wait(3000);",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://172.104.180.223:4001/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 172.104.180.223:4001\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://172.104.180.223:4001/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 172.104.180.223:4001\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:57753/__cypress/runner/cypress_runner.js:143973:23\n    at visitFailedByErr (http://localhost:57753/__cypress/runner/cypress_runner.js:143332:12)\n    at http://localhost:57753/__cypress/runner/cypress_runner.js:143972:11\n    at tryCatcher (http://localhost:57753/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (http://localhost:57753/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (http://localhost:57753/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (http://localhost:57753/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (http://localhost:57753/__cypress/runner/cypress_runner.js:11325:18)\n    at _drainQueueStep (http://localhost:57753/__cypress/runner/cypress_runner.js:7919:12)\n    at _drainQueue (http://localhost:57753/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:57753/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (http://localhost:57753/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at LoginPage.visit (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testAddUser.js:259:8)\n    at Context.eval (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testAddUser.js:315:11)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 172.104.180.223:4001\n      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)\n  ",
+                "diff": null
+              },
+              "uuid": "06817af8-7292-4e95-a57d-b5edbee85c61",
+              "parentUUID": "6448eb53-d1fd-43ee-8b31-e695e90502af",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add New User",
+              "fullTitle": "Add new User Add New User",
+              "timedOut": null,
+              "duration": 4356,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "newUser.clickAddUser();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: ` nz-sider > div > ul > li:nth-child(10) > span > i`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: ` nz-sider > div > ul > li:nth-child(10) > span > i`, but never found it.\n    at AddUserPage.clickAddUser (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testAddUser.js:135:8)\n    at Context.eval (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testAddUser.js:322:13)",
+                "diff": null
+              },
+              "uuid": "ca3d6079-1a76-4ba3-87e2-3bf912acf3b6",
+              "parentUUID": "6448eb53-d1fd-43ee-8b31-e695e90502af",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search User",
+              "fullTitle": "Add new User Search User",
+              "timedOut": null,
+              "duration": 6409,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "newUser.searchUser();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `:nth-child(8) > .ant-form-item-control-wrapper > .ant-form-item-control > .ant-form-item-children > .ant-btn`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `:nth-child(8) > .ant-form-item-control-wrapper > .ant-form-item-control > .ant-form-item-children > .ant-btn`, but never found it.\n    at AddUserPage.searchUser (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testAddUser.js:171:8)\n    at Context.eval (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testAddUser.js:325:13)",
+                "diff": null
+              },
+              "uuid": "bb444993-01c3-4706-b8c0-d6168b67e539",
+              "parentUUID": "6448eb53-d1fd-43ee-8b31-e695e90502af",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Delete User",
+              "fullTitle": "Add new User Delete User",
+              "timedOut": null,
+              "duration": 7415,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "newUser.deleteUser();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `table > tbody > tr > td:nth-child(10) > a > i > svg`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `table > tbody > tr > td:nth-child(10) > a > i > svg`, but never found it.\n    at AddUserPage.deleteUser (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testAddUser.js:177:8)\n    at Context.eval (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testAddUser.js:328:13)",
+                "diff": null
+              },
+              "uuid": "846f3076-b571-45a6-84a3-407f386342eb",
+              "parentUUID": "6448eb53-d1fd-43ee-8b31-e695e90502af",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logout Admin",
+              "fullTitle": "Add new User Logout Admin",
+              "timedOut": null,
+              "duration": 4381,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "newUser.logout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `nz-layout > nz-header > ul > li > nz-dropdown > span`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `nz-layout > nz-header > ul > li > nz-dropdown > span`, but never found it.\n    at AddUserPage.logout (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testAddUser.js:186:8)\n    at Context.eval (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testAddUser.js:331:13)",
+                "diff": null
+              },
+              "uuid": "689ef397-042e-4b92-b5ed-6833c5116971",
+              "parentUUID": "6448eb53-d1fd-43ee-8b31-e695e90502af",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "06817af8-7292-4e95-a57d-b5edbee85c61",
+            "ca3d6079-1a76-4ba3-87e2-3bf912acf3b6",
+            "bb444993-01c3-4706-b8c0-d6168b67e539",
+            "846f3076-b571-45a6-84a3-407f386342eb",
+            "689ef397-042e-4b92-b5ed-6833c5116971"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 37236,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

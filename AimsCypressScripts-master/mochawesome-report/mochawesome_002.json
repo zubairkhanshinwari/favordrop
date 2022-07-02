@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-28T05:48:14.859Z",
+    "end": "2021-07-28T05:48:24.036Z",
+    "duration": 9177,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "caba6551-bd4b-471b-98bc-7a710be30bc1",
+      "title": "",
+      "fullFile": "cypress/integration/testCases/AIMS.js",
+      "file": "cypress/integration/testCases/AIMS.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "06a9d201-a684-4004-83dd-ba0c95ba6304",
+          "title": "AIMS TestCases",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visti AIMS",
+              "fullTitle": "AIMS TestCases Visti AIMS",
+              "timedOut": null,
+              "duration": 6741,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://172.104.180.223:4001/#/login');",
+              "err": {},
+              "uuid": "bea8942f-c497-4099-9218-18190b7e14c8",
+              "parentUUID": "06a9d201-a684-4004-83dd-ba0c95ba6304",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bea8942f-c497-4099-9218-18190b7e14c8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6741,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

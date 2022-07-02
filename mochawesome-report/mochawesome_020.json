@@ -1,0 +1,123 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-03-03T10:47:07.526Z",
+    "end": "2022-03-03T10:47:56.803Z",
+    "duration": 49277,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "88650a57-0aa8-428a-a0a4-b9c2b6e530f7",
+      "title": "",
+      "fullFile": "cypress/integration/testCases/testActivity.js",
+      "file": "cypress/integration/testCases/testActivity.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "05172f6a-bbe8-4b94-9dec-eba7b51c5484",
+          "title": "LoginActivity",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "valid user name and invalid password",
+              "fullTitle": "LoginActivity valid user name and invalid password",
+              "timedOut": null,
+              "duration": 14165,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Alogin.visit();\nAlogin.fillEmail(user.user9);\nAlogin.fillPassword(user.pass9);\nAlogin.clickSubmit();\ncy.wait(5000);",
+              "err": {},
+              "uuid": "18622e09-40b7-471c-ae66-7c81d9ec3000",
+              "parentUUID": "05172f6a-bbe8-4b94-9dec-eba7b51c5484",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Enter the activity Detail",
+              "fullTitle": "LoginActivity Enter the activity Detail",
+              "timedOut": null,
+              "duration": 32526,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "activity.EnterActivtyDetail(true); // activity.EnterActivtyDetail(false)",
+              "err": {},
+              "uuid": "216c25fe-a763-4996-b06f-ba636423519c",
+              "parentUUID": "05172f6a-bbe8-4b94-9dec-eba7b51c5484",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "18622e09-40b7-471c-ae66-7c81d9ec3000",
+            "216c25fe-a763-4996-b06f-ba636423519c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 46691,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

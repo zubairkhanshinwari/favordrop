@@ -1,0 +1,30 @@
+{
+    "navuser": " nz-sider > div > ul > li:nth-child(10) > span > i",
+    "newuser":":nth-child(7) > .ant-form-item-control-wrapper > .ant-form-item-control > .ant-form-item-children > .ant-btn",
+    "name":"nz-row:nth-child(1) > nz-col:nth-child(1) > nz-form-item > nz-form-control > div > span > input",
+    "cnic":"nz-row:nth-child(1) > nz-col:nth-child(2) > nz-form-item > nz-form-control > div > span > input",
+    "mail":"nz-row:nth-child(1) > nz-col:nth-child(3) > nz-form-item > nz-form-control > div > span > input",
+    "password":"nz-row:nth-child(1) > nz-col:nth-child(4) > nz-form-item > nz-form-control > div > span > input",
+    "gender":"nz-row:nth-child(1) > nz-col:nth-child(5) > nz-form-item > nz-form-control > div > span > nz-select > div > span > i",
+    "genderSel":".ant-select-dropdown-menu > :nth-child(1)",
+    "phone":"nz-row:nth-child(1) > nz-col:nth-child(6) > nz-form-item > nz-form-control > div > span > input",
+    "userType":"nz-row:nth-child(2) > nz-col:nth-child(1) > nz-form-item > nz-form-control > div > span > nz-select > div",
+    "userTypeSel":".ant-select-dropdown-menu > :nth-child(6)",
+    "office":" nz-row:nth-child(2) > nz-col:nth-child(2) > nz-form-item > nz-form-control > div > span > nz-select > div > span",
+    "officeSel":".ant-select-dropdown-menu > :nth-child(2)",
+    "section":" nz-row:nth-child(2) > nz-col:nth-child(3) > nz-form-item > nz-form-control > div > span > nz-select > div > span",
+    "sectionSel":".ant-select-dropdown-menu > :nth-child(2)",
+    "jobTitle":":nth-child(2) > :nth-child(4) > .ant-form-item > .ant-form-item-control-wrapper > .ant-form-item-control > .ant-form-item-children > .ant-input",
+    "supervisor":"nz-row:nth-child(2) > nz-col:nth-child(5) > nz-form-item > nz-form-control > div > span > nz-select > div > span > i",
+    "supervisorSel":".ant-select-dropdown-menu > :nth-child(2)",
+    "callSign":":nth-child(7) > .ant-form-item > .ant-form-item-control-wrapper > .ant-form-item-control > .ant-form-item-children > .ant-input",
+    "addUserBtn":".text-right > .ant-form-item > .ant-form-item-control-wrapper > .ant-form-item-control > .ant-form-item-children > .ng-star-inserted",
+
+    "clickSearchBtn":":nth-child(8) > .ant-form-item-control-wrapper > .ant-form-item-control > .ant-form-item-children > .ant-btn",
+    "searchName":":nth-child(1) > .ant-form-item-control-wrapper > .ant-form-item-control > .ant-form-item-children > .ant-input",
+
+    "logoutDot":"nz-layout > nz-header > ul > li > nz-dropdown > span",
+    "logoutClick":".header-dropdown > :nth-child(3) > a"
+
+
+}

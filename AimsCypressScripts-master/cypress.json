@@ -1,0 +1,14 @@
+{
+  "viewportWidth": 1400,
+  "viewportHeight": 800,
+  "projectId": "c3m8s2",
+
+  "reporter": "../node_modules/mochawesome/src/mochawesome.js",
+  "reporterOptions": {
+      "overwrite": false,
+      "html": false,
+      "json": true
+  }
+  
+
+}

@@ -1,0 +1,32 @@
+{
+  "user1": "jason+pitogo@ark.ph",
+  "pass1":"Test1234!",
+
+  "user2": "admin@324",
+  "pass2": "aims.ss",
+
+  "user3": "admin@kdsfl",
+  "pass3": "kdjf32",
+
+  "user4": " ",
+  "pass4": " ",
+
+  "user5": " ",
+  "pass5": " ",
+
+  "user6": " ",
+  "pass6": "aims.ssss",
+
+  "user7": "admin@aims.ss",
+  "pass7": " ",
+
+  "user8": "adin@aims.ss",
+  "pass8": " ",
+
+  "user9": "admin@aims.ss",
+  "pass9": "aims.ss",
+
+  "mail": "#email",
+  "password": "#password",
+  "loginbtn": ".login-form-button"
+}

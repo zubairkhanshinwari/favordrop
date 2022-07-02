@@ -1,0 +1,147 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-03-08T11:02:19.648Z",
+    "end": "2022-03-08T11:03:53.946Z",
+    "duration": 94298,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "069a4b0c-b4b5-4b41-88d3-c2ba39da34ee",
+      "title": "",
+      "fullFile": "cypress/integration/TestSuit/testSuit.js",
+      "file": "cypress/integration/TestSuit/testSuit.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c9b40dda-fd3e-422f-9dec-32f6dfb71e66",
+          "title": "AIMS",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login User ",
+              "fullTitle": "AIMS Login User ",
+              "timedOut": null,
+              "duration": 9311,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Ilogin.visit();\nIlogin.fillEmail(user.user9);\nIlogin.fillPassword(user.pass9);\nIlogin.clickSubmit();",
+              "err": {},
+              "uuid": "46e50283-b95c-4d7b-b88e-53f13f5dea93",
+              "parentUUID": "c9b40dda-fd3e-422f-9dec-32f6dfb71e66",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create Incidient",
+              "fullTitle": "AIMS Create Incidient",
+              "timedOut": null,
+              "duration": 42698,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "for (let i = 0; i <= 0; i++) {\n  incidient.enterIncidientDetail(); //testing\n}",
+              "err": {},
+              "uuid": "d825c329-c4f9-4b77-b878-5a51ac0988ee",
+              "parentUUID": "c9b40dda-fd3e-422f-9dec-32f6dfb71e66",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create Activity",
+              "fullTitle": "AIMS Create Activity",
+              "timedOut": null,
+              "duration": 38709,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "for (let i = 0; i <= 0; i++) {\n  activity.EnterActivtyDetail(true);\n}",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#event_subtype`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#event_subtype`, but never found it.\n    at ActivityPage.EnterActivtyDetail (http://172.104.180.223/__cypress/tests?p=cypress\\integration\\TestSuit\\testSuit.js:160:8)\n    at Context.eval (http://172.104.180.223/__cypress/tests?p=cypress\\integration\\TestSuit\\testSuit.js:337:16)",
+                "diff": null
+              },
+              "uuid": "daf33172-5615-4bda-9b24-b11d2ec2ee72",
+              "parentUUID": "c9b40dda-fd3e-422f-9dec-32f6dfb71e66",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "46e50283-b95c-4d7b-b88e-53f13f5dea93",
+            "d825c329-c4f9-4b77-b878-5a51ac0988ee"
+          ],
+          "failures": [
+            "daf33172-5615-4bda-9b24-b11d2ec2ee72"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 90718,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

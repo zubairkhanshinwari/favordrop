@@ -1,0 +1,32 @@
+{
+  "user1": "admin@aims.ss",
+  "pass1":"aimsss.s",
+
+  "user2": "admin@324",
+  "pass2": "aims.ss",
+
+  "user3": "admin@kdsfl",
+  "pass3": "kdjf32",
+
+  "user4": " ",
+  "pass4": " ",
+
+  "user5": " ",
+  "pass5": " ",
+
+  "user6": " ",
+  "pass6": "aims.ssss",
+
+  "user7": "admin@aims.ss",
+  "pass7": " ",
+
+  "user8": "adin@aims.ss",
+  "pass8": " ",
+
+  "user9": "admin@aims.ss",
+  "pass9": "aims.ss",
+
+  "mail": "nz-form-item:nth-child(1) > nz-form-control > div > span > nz-input-group > input",
+  "password": "nz-form-item:nth-child(2) > nz-form-control > div > span > nz-input-group > input",
+  "loginbtn": ".login-form-button"
+}

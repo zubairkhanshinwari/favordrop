@@ -1,0 +1,142 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-03-03T10:44:41.406Z",
+    "end": "2022-03-03T10:46:27.184Z",
+    "duration": 105778,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "97c03b0c-5f57-4b33-9114-5ad29f29192e",
+      "title": "",
+      "fullFile": "cypress/integration/TestSuit/testSuit.js",
+      "file": "cypress/integration/TestSuit/testSuit.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "52835054-d9b8-4005-9afc-0d3f8ae77b2b",
+          "title": "AIMS",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login User ",
+              "fullTitle": "AIMS Login User ",
+              "timedOut": null,
+              "duration": 12283,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Ilogin.visit();\nIlogin.fillEmail(user.user9);\nIlogin.fillPassword(user.pass9);\nIlogin.clickSubmit();",
+              "err": {},
+              "uuid": "44ec953b-2ae2-4bed-9272-12b382f2be44",
+              "parentUUID": "52835054-d9b8-4005-9afc-0d3f8ae77b2b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create Incidient",
+              "fullTitle": "AIMS Create Incidient",
+              "timedOut": null,
+              "duration": 32126,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "for (let i = 0; i <= 0; i++) {\n  incidient.enterIncidientDetail(); //testing\n}",
+              "err": {},
+              "uuid": "65b93661-9564-489f-9745-b8b00e0978f1",
+              "parentUUID": "52835054-d9b8-4005-9afc-0d3f8ae77b2b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create Activity",
+              "fullTitle": "AIMS Create Activity",
+              "timedOut": null,
+              "duration": 58059,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "for (let i = 0; i <= 0; i++) {\n  activity.EnterActivtyDetail(true);\n}",
+              "err": {},
+              "uuid": "5a00557b-f98b-4bd5-acf1-9f9652e3188c",
+              "parentUUID": "52835054-d9b8-4005-9afc-0d3f8ae77b2b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "44ec953b-2ae2-4bed-9272-12b382f2be44",
+            "65b93661-9564-489f-9745-b8b00e0978f1",
+            "5a00557b-f98b-4bd5-acf1-9f9652e3188c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 102468,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

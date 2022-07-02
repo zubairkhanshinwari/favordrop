@@ -1,0 +1,292 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 9,
+    "passes": 0,
+    "pending": 0,
+    "failures": 9,
+    "start": "2022-02-10T06:10:02.153Z",
+    "end": "2022-02-10T06:12:45.124Z",
+    "duration": 162971,
+    "testsRegistered": 9,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d0fde5e4-4323-44e4-a460-18e01d4ed65c",
+      "title": "",
+      "fullFile": "cypress/integration/testCases/testLogin.js",
+      "file": "cypress/integration/testCases/testLogin.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "888dbe5b-bb15-4f18-8e7d-65b9dde3c8a2",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "valid user name and invalid password",
+              "fullTitle": "Login valid user name and invalid password",
+              "timedOut": null,
+              "duration": 14326,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "login.visit();\nlogin.fillEmail(user.user1);\nlogin.fillPassword(user.pass1);\nlogin.clickSubmit();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://172.104.180.223:4001/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 172.104.180.223:4001\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://172.104.180.223:4001/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 172.104.180.223:4001\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:57753/__cypress/runner/cypress_runner.js:143973:23\n    at visitFailedByErr (http://localhost:57753/__cypress/runner/cypress_runner.js:143332:12)\n    at http://localhost:57753/__cypress/runner/cypress_runner.js:143972:11\n    at tryCatcher (http://localhost:57753/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (http://localhost:57753/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (http://localhost:57753/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (http://localhost:57753/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (http://localhost:57753/__cypress/runner/cypress_runner.js:11325:18)\n    at _drainQueueStep (http://localhost:57753/__cypress/runner/cypress_runner.js:7919:12)\n    at _drainQueue (http://localhost:57753/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:57753/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (http://localhost:57753/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at LoginPage.visit (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testLogin.js:121:8)\n    at Context.eval (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testLogin.js:172:11)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 172.104.180.223:4001\n      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)\n  ",
+                "diff": null
+              },
+              "uuid": "f2d0382d-92c5-4cb3-927a-9129176bcfe1",
+              "parentUUID": "888dbe5b-bb15-4f18-8e7d-65b9dde3c8a2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "invalid user name and valid password",
+              "fullTitle": "Login invalid user name and valid password",
+              "timedOut": null,
+              "duration": 21091,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "login.visit();\nlogin.fillEmail(user.user2);\nlogin.fillPassword(user.pass2);\nlogin.clickSubmit();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://172.104.180.223:4001/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 172.104.180.223:4001\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://172.104.180.223:4001/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 172.104.180.223:4001\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:57753/__cypress/runner/cypress_runner.js:143973:23\n    at visitFailedByErr (http://localhost:57753/__cypress/runner/cypress_runner.js:143332:12)\n    at http://localhost:57753/__cypress/runner/cypress_runner.js:143972:11\n    at tryCatcher (http://localhost:57753/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (http://localhost:57753/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (http://localhost:57753/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (http://localhost:57753/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (http://localhost:57753/__cypress/runner/cypress_runner.js:11325:18)\n    at _drainQueueStep (http://localhost:57753/__cypress/runner/cypress_runner.js:7919:12)\n    at _drainQueue (http://localhost:57753/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:57753/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (http://localhost:57753/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at LoginPage.visit (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testLogin.js:121:8)\n    at Context.eval (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testLogin.js:178:11)\n\nFrom Node.js Internals:\n  Error: connect ETIMEDOUT 172.104.180.223:4001\n      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)\n  ",
+                "diff": null
+              },
+              "uuid": "5980f0e2-66cd-4edc-a092-d5d7822fb2b3",
+              "parentUUID": "888dbe5b-bb15-4f18-8e7d-65b9dde3c8a2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "invalid user name and  invalid password",
+              "fullTitle": "Login invalid user name and  invalid password",
+              "timedOut": null,
+              "duration": 17325,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "login.visit();\nlogin.fillEmail(user.user3);\nlogin.fillPassword(user.pass3);\nlogin.clickSubmit();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://172.104.180.223:4001/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 172.104.180.223:4001\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://172.104.180.223:4001/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 172.104.180.223:4001\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:57753/__cypress/runner/cypress_runner.js:143973:23\n    at visitFailedByErr (http://localhost:57753/__cypress/runner/cypress_runner.js:143332:12)\n    at http://localhost:57753/__cypress/runner/cypress_runner.js:143972:11\n    at tryCatcher (http://localhost:57753/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (http://localhost:57753/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (http://localhost:57753/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (http://localhost:57753/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (http://localhost:57753/__cypress/runner/cypress_runner.js:11325:18)\n    at _drainQueueStep (http://localhost:57753/__cypress/runner/cypress_runner.js:7919:12)\n    at _drainQueue (http://localhost:57753/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:57753/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (http://localhost:57753/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at LoginPage.visit (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testLogin.js:121:8)\n    at Context.eval (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testLogin.js:184:11)\n\nFrom Node.js Internals:\n  Error: connect ETIMEDOUT 172.104.180.223:4001\n      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)\n  ",
+                "diff": null
+              },
+              "uuid": "1e9487d8-5d21-46e1-9341-7a9eeee2b6cb",
+              "parentUUID": "888dbe5b-bb15-4f18-8e7d-65b9dde3c8a2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Empty user name and  password and click login",
+              "fullTitle": "Login Empty user name and  password and click login",
+              "timedOut": null,
+              "duration": 26555,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "login.visit();\nlogin.fillEmail(user.user4);\nlogin.fillPassword(user.pass4);\nlogin.clickSubmit();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://172.104.180.223:4001/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 172.104.180.223:4001\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://172.104.180.223:4001/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 172.104.180.223:4001\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:57753/__cypress/runner/cypress_runner.js:143973:23\n    at visitFailedByErr (http://localhost:57753/__cypress/runner/cypress_runner.js:143332:12)\n    at http://localhost:57753/__cypress/runner/cypress_runner.js:143972:11\n    at tryCatcher (http://localhost:57753/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (http://localhost:57753/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (http://localhost:57753/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (http://localhost:57753/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (http://localhost:57753/__cypress/runner/cypress_runner.js:11325:18)\n    at _drainQueueStep (http://localhost:57753/__cypress/runner/cypress_runner.js:7919:12)\n    at _drainQueue (http://localhost:57753/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:57753/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (http://localhost:57753/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at LoginPage.visit (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testLogin.js:121:8)\n    at Context.eval (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testLogin.js:190:11)\n\nFrom Node.js Internals:\n  Error: connect ETIMEDOUT 172.104.180.223:4001\n      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)\n  ",
+                "diff": null
+              },
+              "uuid": "a23045cc-db05-4495-92b6-1908d435d67a",
+              "parentUUID": "888dbe5b-bb15-4f18-8e7d-65b9dde3c8a2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Empty user name and fill valid password and click login",
+              "fullTitle": "Login Empty user name and fill valid password and click login",
+              "timedOut": null,
+              "duration": 26539,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "login.visit();\nlogin.fillEmail(user.user5);\nlogin.fillPassword(user.pass5);\nlogin.clickSubmit();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://172.104.180.223:4001/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 172.104.180.223:4001\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://172.104.180.223:4001/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 172.104.180.223:4001\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:57753/__cypress/runner/cypress_runner.js:143973:23\n    at visitFailedByErr (http://localhost:57753/__cypress/runner/cypress_runner.js:143332:12)\n    at http://localhost:57753/__cypress/runner/cypress_runner.js:143972:11\n    at tryCatcher (http://localhost:57753/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (http://localhost:57753/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (http://localhost:57753/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (http://localhost:57753/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (http://localhost:57753/__cypress/runner/cypress_runner.js:11325:18)\n    at _drainQueueStep (http://localhost:57753/__cypress/runner/cypress_runner.js:7919:12)\n    at _drainQueue (http://localhost:57753/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:57753/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (http://localhost:57753/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at LoginPage.visit (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testLogin.js:121:8)\n    at Context.eval (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testLogin.js:196:11)\n\nFrom Node.js Internals:\n  Error: connect ETIMEDOUT 172.104.180.223:4001\n      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)\n  ",
+                "diff": null
+              },
+              "uuid": "e75dcbe0-eef8-4279-9ff2-cd92b23ce563",
+              "parentUUID": "888dbe5b-bb15-4f18-8e7d-65b9dde3c8a2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Empty user name and fill invalid password and click login",
+              "fullTitle": "Login Empty user name and fill invalid password and click login",
+              "timedOut": null,
+              "duration": 14240,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "login.visit();\nlogin.fillEmail(user.user6);\nlogin.fillPassword(user.pass6);\nlogin.clickSubmit();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://172.104.180.223:4001/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 172.104.180.223:4001\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://172.104.180.223:4001/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 172.104.180.223:4001\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:57753/__cypress/runner/cypress_runner.js:143973:23\n    at visitFailedByErr (http://localhost:57753/__cypress/runner/cypress_runner.js:143332:12)\n    at http://localhost:57753/__cypress/runner/cypress_runner.js:143972:11\n    at tryCatcher (http://localhost:57753/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (http://localhost:57753/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (http://localhost:57753/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (http://localhost:57753/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (http://localhost:57753/__cypress/runner/cypress_runner.js:11325:18)\n    at _drainQueueStep (http://localhost:57753/__cypress/runner/cypress_runner.js:7919:12)\n    at _drainQueue (http://localhost:57753/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:57753/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (http://localhost:57753/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at LoginPage.visit (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testLogin.js:121:8)\n    at Context.eval (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testLogin.js:202:11)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 172.104.180.223:4001\n      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)\n  ",
+                "diff": null
+              },
+              "uuid": "170a17de-f3b9-498b-9315-88dfc19131eb",
+              "parentUUID": "888dbe5b-bb15-4f18-8e7d-65b9dde3c8a2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Enter valid user name and Empty password and click login",
+              "fullTitle": "Login Enter valid user name and Empty password and click login",
+              "timedOut": null,
+              "duration": 14285,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "login.visit();\nlogin.fillEmail(user.user7);\nlogin.fillPassword(user.pass7);\nlogin.clickSubmit();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://172.104.180.223:4001/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 172.104.180.223:4001\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://172.104.180.223:4001/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 172.104.180.223:4001\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:57753/__cypress/runner/cypress_runner.js:143973:23\n    at visitFailedByErr (http://localhost:57753/__cypress/runner/cypress_runner.js:143332:12)\n    at http://localhost:57753/__cypress/runner/cypress_runner.js:143972:11\n    at tryCatcher (http://localhost:57753/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (http://localhost:57753/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (http://localhost:57753/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (http://localhost:57753/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (http://localhost:57753/__cypress/runner/cypress_runner.js:11325:18)\n    at _drainQueueStep (http://localhost:57753/__cypress/runner/cypress_runner.js:7919:12)\n    at _drainQueue (http://localhost:57753/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:57753/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (http://localhost:57753/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at LoginPage.visit (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testLogin.js:121:8)\n    at Context.eval (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testLogin.js:208:11)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 172.104.180.223:4001\n      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)\n  ",
+                "diff": null
+              },
+              "uuid": "ce43ad75-a410-4d27-b29f-2d6074fc6fbb",
+              "parentUUID": "888dbe5b-bb15-4f18-8e7d-65b9dde3c8a2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Enter invalid user name and Empty password and click login",
+              "fullTitle": "Login Enter invalid user name and Empty password and click login",
+              "timedOut": null,
+              "duration": 14215,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "login.visit();\nlogin.fillEmail(user.user8);\nlogin.fillPassword(user.pass8);\nlogin.clickSubmit();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://172.104.180.223:4001/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 172.104.180.223:4001\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://172.104.180.223:4001/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 172.104.180.223:4001\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:57753/__cypress/runner/cypress_runner.js:143973:23\n    at visitFailedByErr (http://localhost:57753/__cypress/runner/cypress_runner.js:143332:12)\n    at http://localhost:57753/__cypress/runner/cypress_runner.js:143972:11\n    at tryCatcher (http://localhost:57753/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (http://localhost:57753/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (http://localhost:57753/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (http://localhost:57753/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (http://localhost:57753/__cypress/runner/cypress_runner.js:11325:18)\n    at _drainQueueStep (http://localhost:57753/__cypress/runner/cypress_runner.js:7919:12)\n    at _drainQueue (http://localhost:57753/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:57753/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (http://localhost:57753/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at LoginPage.visit (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testLogin.js:121:8)\n    at Context.eval (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testLogin.js:214:11)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 172.104.180.223:4001\n      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)\n  ",
+                "diff": null
+              },
+              "uuid": "7667ab66-287a-4f8e-87d3-37410fa85f90",
+              "parentUUID": "888dbe5b-bb15-4f18-8e7d-65b9dde3c8a2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "valid user name and valid password",
+              "fullTitle": "Login valid user name and valid password",
+              "timedOut": null,
+              "duration": 14133,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "login.visit();\nlogin.fillEmail(user.user9);\nlogin.fillPassword(user.pass9);\nlogin.clickSubmit();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://172.104.180.223:4001/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 172.104.180.223:4001\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://172.104.180.223:4001/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 172.104.180.223:4001\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:57753/__cypress/runner/cypress_runner.js:143973:23\n    at visitFailedByErr (http://localhost:57753/__cypress/runner/cypress_runner.js:143332:12)\n    at http://localhost:57753/__cypress/runner/cypress_runner.js:143972:11\n    at tryCatcher (http://localhost:57753/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (http://localhost:57753/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (http://localhost:57753/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (http://localhost:57753/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (http://localhost:57753/__cypress/runner/cypress_runner.js:11325:18)\n    at _drainQueueStep (http://localhost:57753/__cypress/runner/cypress_runner.js:7919:12)\n    at _drainQueue (http://localhost:57753/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:57753/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (http://localhost:57753/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at LoginPage.visit (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testLogin.js:121:8)\n    at Context.eval (http://localhost:57753/__cypress/tests?p=cypress\\integration\\testCases\\testLogin.js:220:11)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 172.104.180.223:4001\n      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)\n  ",
+                "diff": null
+              },
+              "uuid": "8e31f097-7991-4fd0-8a57-475f01fe0593",
+              "parentUUID": "888dbe5b-bb15-4f18-8e7d-65b9dde3c8a2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "f2d0382d-92c5-4cb3-927a-9129176bcfe1",
+            "5980f0e2-66cd-4edc-a092-d5d7822fb2b3",
+            "1e9487d8-5d21-46e1-9341-7a9eeee2b6cb",
+            "a23045cc-db05-4495-92b6-1908d435d67a",
+            "e75dcbe0-eef8-4279-9ff2-cd92b23ce563",
+            "170a17de-f3b9-498b-9315-88dfc19131eb",
+            "ce43ad75-a410-4d27-b29f-2d6074fc6fbb",
+            "7667ab66-287a-4f8e-87d3-37410fa85f90",
+            "8e31f097-7991-4fd0-8a57-475f01fe0593"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 162709,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

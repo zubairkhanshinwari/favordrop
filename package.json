@@ -1,0 +1,38 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "rollup": "rollup",
+    "start": "http-server",
+    "test": "cypress run --spec 'cypress/integration/TestSuit/*.js'",
+    "runtests": "npm run test --",
+    "cypress:open": "npx cypress open",
+    "delete:reportFolder": "rm -rf mochawesome-report/",
+    "test:cli": "npm run delete:reportFolder && cypress run"
+  },
+  "author": "zubair",
+  "license": "ISC",
+  "devDependencies": {
+    "clipboardy": "^3.0.0",
+    "cypress": "^10.1.0",
+    "cypress-multi-reporters": "^1.5.0",
+    "cypress-wait-until": "^1.7.1",
+    "cypress-xpath": "^1.6.2",
+    "mocha": "^9.0.3",
+    "mocha-junit-reporter": "^2.0.0",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^6.0.1"
+  },
+  "dependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "http-server": "^14.1.0",
+    "rollup": "^2.67.3"
+  }
+}

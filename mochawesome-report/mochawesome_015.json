@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2022-02-18T04:45:27.869Z",
+    "end": "2022-02-18T04:46:41.094Z",
+    "duration": 73225,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a01149a5-27bc-47cd-80ee-0e2adda16e36",
+      "title": "",
+      "fullFile": "cypress/integration/testCases/testActivity.js",
+      "file": "cypress/integration/testCases/testActivity.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "146f78d0-c2b5-458c-9a10-536039d8107c",
+          "title": "LoginActivity",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "valid user name and invalid password",
+              "fullTitle": "LoginActivity valid user name and invalid password",
+              "timedOut": null,
+              "duration": 60514,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "Alogin.visit();\nAlogin.fillEmail(user.user9);\nAlogin.fillPassword(user.pass9);\nAlogin.clickSubmit();\ncy.wait(5000);",
+              "err": {
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (http://172.104.180.223/__cypress/runner/cypress_runner.js:158235:72)\n    at http://172.104.180.223/__cypress/runner/cypress_runner.js:159288:16\n    at tryCatcher (http://172.104.180.223/__cypress/runner/cypress_runner.js:13022:23)\n    at http://172.104.180.223/__cypress/runner/cypress_runner.js:8144:41\n    at tryCatcher (http://172.104.180.223/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://172.104.180.223/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://172.104.180.223/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://172.104.180.223/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://172.104.180.223/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://172.104.180.223/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://172.104.180.223/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://172.104.180.223/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://172.104.180.223/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at LoginPage.visit (http://172.104.180.223/__cypress/tests?p=cypress\\integration\\testCases\\testActivity.js:191:8)\n    at Context.eval (http://172.104.180.223/__cypress/tests?p=cypress\\integration\\testCases\\testActivity.js:247:12)",
+                "diff": null
+              },
+              "uuid": "c99d7669-92a1-43cd-960f-39af89fe33b7",
+              "parentUUID": "146f78d0-c2b5-458c-9a10-536039d8107c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Enter the activity Detail",
+              "fullTitle": "LoginActivity Enter the activity Detail",
+              "timedOut": null,
+              "duration": 4388,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "activity.EnterActivtyDetail();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#new-activity`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#new-activity`, but never found it.\n    at ActivityPage.EnterActivtyDetail (http://172.104.180.223/__cypress/tests?p=cypress\\integration\\testCases\\testActivity.js:134:8)\n    at Context.eval (http://172.104.180.223/__cypress/tests?p=cypress\\integration\\testCases\\testActivity.js:254:14)",
+                "diff": null
+              },
+              "uuid": "7ac2c1c1-7d07-4c60-a5e7-d1167cceb8b4",
+              "parentUUID": "146f78d0-c2b5-458c-9a10-536039d8107c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c99d7669-92a1-43cd-960f-39af89fe33b7",
+            "7ac2c1c1-7d07-4c60-a5e7-d1167cceb8b4"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 64902,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
