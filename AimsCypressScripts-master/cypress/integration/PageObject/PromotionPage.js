@@ -1,29 +1,21 @@
-const activity = require('../../fixtures/activity.json')
+const activity = require('../../fixtures/promotion.json')
 const dayjs = require('dayjs')
 
-class ActivityPage{
+class PromotionPage{
    constructor(){}
    
 
-    EnterPromotionDetail(value){
-        cy.get('#navigation-link-promotions').click();
-      //cy.title().should('eq', 'AIMS-Activity and Incident Management System')
-
-      
-      
-     
-      }
+   EnterPromotionDetail(value){
+    cy.get(activity.clickPromotion).click();
 
 
 
 
+      return this
+  }
+  
 
-
-        return this
-    }
-    
- 
-    
+  
 
 }
-export default ActivityPage
+export default PromotionPage

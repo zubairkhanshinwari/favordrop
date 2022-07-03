@@ -26,7 +26,7 @@
   "user9": "admin@aims.ss",
   "pass9": "aims.ss",
 
-  "mail": "nz-form-item:nth-child(1) > nz-form-control > div > span > nz-input-group > input",
-  "password": "nz-form-item:nth-child(2) > nz-form-control > div > span > nz-input-group > input",
-  "loginbtn": ".login-form-button"
+  "mail": "#email",
+  "password": "#password"
+  
 }

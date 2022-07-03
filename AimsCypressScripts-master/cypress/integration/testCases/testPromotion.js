@@ -12,14 +12,14 @@ describe('LoginActivity', function(){
     const activity = new PromotionPage();
    
     it('valid user name and invalid password', function(){
-        Alogin.visit()
+        Alogin.visit();
         Alogin.fillEmail(user.user1);
         Alogin.fillPassword(user.pass1);
-        Alogin.clickSubmit();
+   
        // cy.wait(5000)
      });
 
-     it('Enter the activity Detail', function(){
+     it('Enter the Promotion Detail', function(){
          activity.EnterPromotionDetail();
          //activity.EnterActivtyDetail(false)
      });
