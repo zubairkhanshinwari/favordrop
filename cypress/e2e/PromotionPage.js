@@ -8,9 +8,6 @@ class PromotionPage{
    EnterPromotionDetail(value){
     cy.get(activity.clickPromotion).click();
 
-
-
-
       return this
   }
   
