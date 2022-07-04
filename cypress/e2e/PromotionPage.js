@@ -1,4 +1,4 @@
-const activity = require('../../fixtures/promotion.json')
+const activity = require('../../AimsCypressScripts-master/cypress/fixtures/promotion.json')
 const dayjs = require('dayjs')
 
 class PromotionPage{

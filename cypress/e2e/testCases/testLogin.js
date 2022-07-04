@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 const LoginPage = require('../PageObject/LoginPage');
-const user = require('../../fixtures/user.json');
+const user = require('../../../AimsCypressScripts-master/cypress/fixtures/user.json');
 
 describe('Login', function(){
     const login = new LoginPage();

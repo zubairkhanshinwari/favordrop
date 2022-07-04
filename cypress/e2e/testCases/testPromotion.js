@@ -1,8 +1,8 @@
 /// <reference types="Cypress" />
 import LoginPage from '../PageObject/LoginPage';
-const user = require('../../fixtures/user.json')
+const user = require('../../../AimsCypressScripts-master/cypress/fixtures/user.json')
 
-const PromotionPage = require('../PageObject/PromotionPage');
+const PromotionPage = require('../../../../cypress/e2e/PromotionPage');
 
 
 
