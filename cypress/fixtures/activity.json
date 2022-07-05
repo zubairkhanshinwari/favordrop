@@ -1,0 +1,14 @@
+{
+    "clickPromotion": "#navigation-link-promotions",
+    "createPromotion": "#create-promotion-btn",
+    "selectContact":"#promotion-selectall",
+    "clickNext":"#promotion-modal-btn",
+    "promotionAmount":"#promotion-amount",
+    "promotionValue":"50"
+   
+
+   
+
+}
+
+
