@@ -6,7 +6,7 @@ class LoginPage{
         cy.visit('https://dev-partners.favordrop.com/login');
         cy.screenshot()
     }
-///testing push
+/
     fillEmail(value){
         const field =cy.get(user.mail)
         field.clear()
