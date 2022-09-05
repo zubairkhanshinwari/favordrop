@@ -15,11 +15,24 @@ describe('LoginActivity', function(){
         Alogin.visit()
         Alogin.fillEmail(user.user1)
         Alogin.fillPassword(user.pass1)
+        activity.EnterPromotionDetail()
+        activity.SelectContact()
+        activity.ConfigurePromotion()
       
      })
 
-     it('Enter the activity Detail', function(){
-         activity.EnterPromotionDetail()
-     })
+    //  it('Enter the activity Detail', function(){
+        
+    //  })
+
+
+    //  it('Select contact', function(){
+        
+    // })
+
+
+    // it('Configure Promotion', function(){
+      
+    // })
    
 })

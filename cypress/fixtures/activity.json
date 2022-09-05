@@ -4,7 +4,11 @@
     "selectContact":"#promotion-selectall",
     "clickNext":"#promotion-modal-btn",
     "promotionAmount":"#promotion-amount",
-    "promotionValue":"50"
+    "promotionValue":"50",
+    "expiryTime":"#promotion-expiration-time",
+    "promotionExpiryTime":"#promotion-schedule-datetime",
+    "promotionMessage":"#message",
+    "promotionMessageText":"Test Promotion"
    
 
    

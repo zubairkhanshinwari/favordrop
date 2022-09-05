@@ -19,7 +19,14 @@ class PromotionPage{
     }
 
     ConfigurePromotion(value){
-      cy.get(activity.promotionAmount).type(activity.promotionAmountValue)
+      cy.get(activity.promotionAmount).type(activity.promotionValue)
+      cy.get(activity.expiryTime).click().type('{enter}')
+      cy.get(activity.promotionExpiryTime).click().type('{enter}')
+      cy.get(activity.promotionMessage).type(activity.promotionMessageText)
+     // cy.get(activity.clickNext).click()
+
+
+
 
     }
     
